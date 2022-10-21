@@ -11,6 +11,8 @@ const sendToken=async (user,statusCode,res)=>{
         ),
         httpOnly:true,
         // sameSite:"lax",
+        sameSite:none,
+        secure,
         path:"/",
         credentials: 'include'
     }
