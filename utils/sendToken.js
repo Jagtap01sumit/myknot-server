@@ -18,7 +18,7 @@ const sendToken=async (user,statusCode,res)=>{
     
     res.status(statusCode||200).cookie("token",token,options).json({
         success:true,
-        // token,
+        token,
         // user
     })
 }
