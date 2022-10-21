@@ -9,8 +9,11 @@ const cors=require("cors")
 connectDB()
 const app=express()
 
+// app.use(cors({
+//     origin:"https://myknot-official.netlify.app"
+// }))
 app.use(cors({
-    origin:"https://myknot-official.netlify.app"
+    origin:"http://localhost:3000"
 }))
 
 app.use(express.json({limit:"50mb"}))
