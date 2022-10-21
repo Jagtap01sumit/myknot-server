@@ -13,8 +13,6 @@ const sendToken=async (user,statusCode,res)=>{
         // sameSite:"lax",
         sameSite:none,
         secure,
-        path:"/",
-        credentials: 'include'
     }
 
     
