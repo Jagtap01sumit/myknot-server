@@ -27,6 +27,7 @@ app.use(cookieParser())
 app.use("/api/auth",require("./routes/userRoutes.js"))
 app.use("/api/img",require("./routes/imageRoutes.js"))
 app.use("/api/themes",require("./routes/themeRoutes.js"))
+app.use("/api/cart",require("./routes/cartRoutes.js"))
 
 app.use(ErrorResponse)
 
